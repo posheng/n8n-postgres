@@ -23,4 +23,4 @@ docker-compose stop
 Configuration
 -------------
 
-The default name of the database, user and password for PostgreSQL can be changed in the [`.env`](https://github.com/n8n-io/n8n-hosting/blob/main/docker-compose/withPostgres/.env) file in the current directory.
+The default name of the database, user and password for PostgreSQL can be changed in the [`.env`](https://github.com/posheng/n8n-postgres/blob/main/.env) file in the current directory.
