@@ -8,7 +8,7 @@ Start
 
 To start n8n with PostgreSQL simply start docker-compose by executing the following command in the current folder.
 
-IMPORTANT: But before you do that change the default users and passwords in the [`.env`]() file!
+IMPORTANT: But before you do that change the default users and passwords in the [`.env`](https://github.com/posheng/n8n-postgres/blob/main/.env) file!
 
 ```
 docker-compose up -d
