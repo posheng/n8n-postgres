@@ -3,22 +3,37 @@ n8n with PostgreSQL
 
 Starts n8n with PostgreSQL as database.
 
-Start
+Setup Instructions
 -----
+1. Get ngrok authtoken
+    - Sign up at [ngrok.com](https://ngrok.com)
+    - Go to your dashboard and copy your authtoken
+    - Add it to the .env file
 
-To start n8n with PostgreSQL simply start docker-compose by executing the following command in the current folder.
+2. Start
 
-IMPORTANT: But before you do that change the default users and passwords in the [`.env`](https://github.com/posheng/n8n-postgres/blob/main/.env) file!
+    To start n8n with PostgreSQL simply start docker-compose by executing the following command in the current folder.
 
-```
-docker-compose up -d
-```
+    IMPORTANT: But before you do that change the default users and passwords in the [`.env`](https://github.com/posheng/n8n-postgres/blob/main/.env) file!
 
-To stop it execute:
+    ```
+    docker-compose up -d
+    ```
 
-```
-docker-compose stop
-```
+    To stop it execute:
+
+    ```
+    docker-compose stop
+    ```
+
+3. Find your ngrok URL
+    - Visit `http://localhost:4040` to see the ngrok web interface
+    - Copy the HTTPS URL (e.g.,` https://abc123.ngrok.io`)
+
+4. Update the webhook URL
+    - Edit the `.env` file
+    - Replace `https://your-ngrok-url.ngrok.io/` with your actual ngrok URL
+    - Restart n8n: `docker-compose restart n8n`
 
 Configuration
 -------------
